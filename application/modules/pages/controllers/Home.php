@@ -9,8 +9,8 @@ class Home extends MY_Controller
 
     public function index()
     {
-        $data['page'] = 'call by index function.';
-        $this->load->view('pages/dash_board', $data);
+        $data['main_content']='dash_board';
+        $this->load->view('template',$data);
     }
 
     public function about()
